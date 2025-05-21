@@ -13,6 +13,8 @@ function App() {
     <div className="App">
       <Suspense fallback={<div>loading...</div>}>
         <Navbar />
+
+        
         <Body />
         <Footer />
       </Suspense>
