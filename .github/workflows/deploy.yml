@@ -3,7 +3,7 @@ name: Deploy React App to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change if your default branch is different
+      - main  # or your default branch
 
 permissions:
   contents: read
@@ -28,7 +28,7 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build project
         run: npm run build
@@ -36,7 +36,7 @@ jobs:
       - name: Upload production-ready build files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build
+          path: ./build  # Must match your actual build folder
 
   deploy:
     environment:
