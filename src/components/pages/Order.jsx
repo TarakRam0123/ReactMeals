@@ -5,6 +5,7 @@ const Order = () => {
   return (
     <div>
       comming soon...
+      Sorry for inconvenience
 
     </div>
   )
