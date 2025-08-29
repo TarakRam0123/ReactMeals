@@ -12,7 +12,7 @@ const Order = lazy(() => import('./components/pages/Order'))
 function App() {
   return (
     <div className="App">
-      <Suspense fallback={<div style={{ backgroundColor: "red" }}>loading Page...</div>}>
+      <Suspense fallback={<div style={{ backgroundColor: "red", border: "1px solid green" }}>loading Page...</div>}>
         <Navbar />
         <Routes>
           <Route path="/" element={<Landingpage />} />
