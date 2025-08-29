@@ -6,6 +6,7 @@ const Order = () => {
     <div>
       comming soon...
       Sorry for inconvenience
+      <p>Visit some other Time</p>
 
     </div>
   )
