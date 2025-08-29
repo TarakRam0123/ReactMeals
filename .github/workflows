@@ -3,7 +3,7 @@ name: Deploy ReactMeals to GitHub Pages
 on:
   push:
     branches:
-      - dev   # 👈 Change this to main if you want to deploy from main instead
+      - main   # 👈 Change this to main if you want to deploy from main instead
 
 permissions:
   contents: write
