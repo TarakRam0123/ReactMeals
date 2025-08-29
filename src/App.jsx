@@ -7,13 +7,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Routes } from "react-router-dom";
 const Navbar = lazy(() => import("./components/Navbar"));
 const Landingpage = lazy(() => import("./components/pages/Landingpage"));
-const Order=lazy(()=>import('./components/pages/Order'))
+const Order = lazy(() => import('./components/pages/Order'))
 
 function App() {
   return (
     <div className="App">
-      <Suspense fallback={<div>loading Page...</div>}>
-         <Navbar />
+      <Suspense fallback={<div style={{ backgroundColor: "red" }}>loading Page...</div>}>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Landingpage />} />
           <Route path="/order" element={<Order />} />
