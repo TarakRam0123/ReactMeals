@@ -15,7 +15,7 @@ function App() {
       <Suspense fallback={<div style={{ backgroundColor: "red", border: "1px solid green" }}>loading Page...</div>}>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Landingpage />} />
+          <Route path="/" element={<Suspense fallback={<div style={{ backgroundColor: "red", border: "1px solid green" }}>loading Page...</div>}><Landingpage /></Suspense>} />
           <Route path="/order" element={<Order />} />
         </Routes>
       </Suspense>
